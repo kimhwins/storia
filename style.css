@@ -87,27 +87,31 @@ body:after{
 .navigation a{
 	font-family: 'Kollektif', sans-serif;
 	color: #000;
-	font-size: 12pt;
+	font-size: 11pt;
 	text-decoration: none;
 	letter-spacing: 0.06em;
-	margin: 0 0.5vw 0 4.75vw;
+	margin: 0 0.5vw 0 4vw;
 	text-transform: uppercase;
 	font-weight: 500;
 }
 
-.nav-button {
-	transition: transform 0.5s;
-	-webkit-font-smoothing: antialiased;
+#non-select{
+	color: #bebebe;
+}
+
+.last-nav{
+	margin-right: 0.5vw;
 }
 
 .float{
 	transition: transform 0.5s;
 }
 
-
-.nav-button:hover{
+.float:hover{
 	transform: translate(0, -5px);
 }
+
+
 
 .text{
 	letter-spacing: 0.02vw;
