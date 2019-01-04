@@ -461,3 +461,47 @@ a{
 	color: #000;
 		transition: 0.25s;
 }
+
+.du-button{
+
+	text-decoration: none;
+	font-family: 'Kollektif', sans-serif;
+	color: #FAB5BE;;
+	letter-spacing: 0.03em;
+	font-size: 12.8pt;
+	transition: transform 0.2s;
+	display: inline;
+	text-transform: uppercase;
+
+/*	position: absolute;
+	right: 0;*/
+}
+
+.inline{
+	display: inline-block;
+	text-align: center;
+	transition: transform 0.4s;
+	margin: 3% 7.5% 0% 0%;
+	padding: 1.4% 3.7%;
+	background-color: white;
+	border: solid 2.5px #FAB5BE;
+
+}
+
+.inline:hover{
+	transform: translate(0,-5px);
+}
+
+#no-right-pad{
+	margin-right: 0;
+}
+
+.italic{
+	font-style: italic;
+	display: inline;
+}
+
+.hot-links{
+	margin: 0 -10%;
+}
+
