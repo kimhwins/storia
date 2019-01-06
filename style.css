@@ -468,7 +468,7 @@ a{
 	font-family: 'Kollektif', sans-serif;
 	color: #FAB5BE;;
 	letter-spacing: 0.03em;
-	font-size: 12.8pt;
+	font-size: 12pt;
 	transition: transform 0.2s;
 	display: inline;
 	text-transform: uppercase;
@@ -483,7 +483,7 @@ a{
 	text-align: center;
 	transition: transform 0.4s;
 	margin: 3% 9% 0% -2.7%;
-	padding: 1.4% 3.7%;
+	padding: 1.2% 3.7%;
 	background-color: white;
 	border: solid 2.5px #FAB5BE;
 
