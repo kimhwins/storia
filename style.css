@@ -40,6 +40,10 @@ body:after{
     }
 }
 
+#iframe-display{
+	opacity:0;
+}
+
 .fadein{
     animation-name: fadeIn;
     animation-duration: 1.5s;
