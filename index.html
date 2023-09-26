@@ -1,364 +1,975 @@
-<!doctype html>
+<!DOCTYPE html>
+
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-		<title>Kim Huynh - Storia</title>
-
-		<link rel="stylesheet" href="style.css">
-
-		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,500,500i,600" rel="stylesheet">
-
-		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-<!-- <script type="text/JavaScript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" ></script> -->
-<script src="jquery-3.4.1.min.js"></script>
-	</head>
-
-	<body>
-<script src="scripts.js"></script>
-		<div id="top">.</div>
-			<div id="focus" href="#focus" class="navigation">
-								<div class="float">
-					<div class="nav-button"><a href="http://www.kimhuynh.net/#work">Work</a></div>
-				</div>
-				<div class="float">
-					<div class="nav-button"><a id="non-select" href="http://www.kimhuynh.net/about-me/">About Me</a></div>
-				</div>
-
-				<div class="float">
-					<div class="nav-button"><a id="non-select" class="last-nav" href="https://goo.gl/7mjuQz" target="_blank">Resume</a></div>
-				</div>
-
-			</div>
-
-			<div class="logo">
-				<a href="http://www.kimhuynh.net">Kim Huynh</a> 
-			</div>
-
-		<div class="layout fadein">
-
-			<div class="subtitle">Fall 2018</div>
-			<div class="title">Storia</div>
-
-			<div id="banner">
-				<img src="images/banner-3.png" alt="banner">
-			</div>
 
-			<div class="big-margin">
-				<div class="text section-head">Overview</div>
-				<div class="text section-dis">
-	<!-- 				<div class="centerheader">Easy, relaxing journaling</div> -->
-					<div class="bold-text">Storia</div> is a conceptual web app that helps busy people chronicle their lives as a cohesive story. 
-					<br/><br/>I worked on Storia as a personal project for 3 weeks, whenever I had time during the semester. <div class="italic"> Looking for my internship projects? </div> <a href="https://www.kimhuynh.net/iqvia/"><div class="italic bold-text">Check out my latest one here.</div></a> 
-				</div>
-				<br/><br/>
-			</div>
-
-			<div class="hot-links">
-					<div class="inline"><a class="du-button" href="#research">User Research</a></div>
-					<div class="inline"><a class="du-button" href="#ideation">Ideation & Iterations</a></div>
-					<div id="no-right-pad" class="inline"><a  class="du-button" href="#solution">Prototype</a></div>
-			</div>
-
-			<!-- 			USERS STARTS HERE -->
-			<br/><br/><br/>
-			<div class="big-margin">
-			<div id="inspo" class="text section-head">Inspiration</div>
-			</div>
-
-
-			<div class="row">
-				<div class="column-50">
-					<a href="images/inspiration.png"><img id="header-redesign" src="images/inspiration.png" alt="inspiration"></a>
-
-				</div>
-
-				<div class="column-50 column-50-text">
-					<div>
-						<div class="text section-dis column-text">
-							I used to journal daily! I signed up for a journal service that would email me a reminder every day, and in the evenings I'd take the time to just reflect and write. I really enjoyed having those times of peace and clarity of mind. If I skipped a day, I’d fill it back in within a couple days. 
-
-							<br/><br/>When I hit college, <div class="bold-text">I was so busy</div> that the reminders just started piling up. Every few months, I'd try to write a "catch-up" entry about everything that happened to me so far--events, new people I'd met--<div class='bold-text'>but it would be so long and disorganized that I'd end up giving up.</div>
-						</div>					
-					</div>
-				</div>
-			</div>
-	
-
-
-			<div class="big-margin">	
-
-			<div id="research" class="text section-head">Problem</div>
-                               
-
-			<div class="text centering">
-				<div class="pink-background centering">
-				<div class="bold-text">Journaling is difficult to organize and keep up with.</div>
-
-				<br/><br/> With so many obligations, it’s hard to find time. Meanwhile, the gap between memories and recorded entries widens.
-			</div>
-			</div>	
-
-			<div class="text section-head">Research</div>
-			<div class="text section-dis">
-				I needed to see if this wasn’t just a me problem! To really understand the problem at hand and how to design the best solution, <div class="bold-text">I sent out a preliminary user questionnaire and looked at existing solutions.</div>
-			</div>
-
-			<div class="text section-head-2" id="sevenfivetop">Questionnaire</div>
-			<div class="text section-dis">
-				In the questionnaire, I asked college students about their journaling habits. I discovered some key statistics, barriers, and habits:
-			</div>
-		</div>
-
-				<img id="surrender" src="images/stats.jpg">
-				<img id="surrender" src="images/question.jpg">
-				<img id="surrender" src="images/habits.jpg">
-			<div class="big-margin">
-
-				<div class="text section-head-2" id="sevenfivetop">Benchmarking</div>
-				<div class="text section-dis">
-					I then looked at existing solutions, their pros and cons, and how they could be applied to Storia. I looked at four different categories of solutions: <div class="bold-text">bona fide journaling apps, writing apps, habit-forming apps, and story planning/organizing apps.</div> I wanted to learn more about how they solved their users' problems.
-				</div>
-			</div>
-		<img id="surrender" src="images/benchmarking1.png">
-
-		<div class="big-margin">
-			<div class="text section-dis">
-				Afterwards, I came up with lists of features that I thought were most successful and effective for each category of apps.
-			</div>
-
-		</div>
-
-		<img id="surrender" src="images/benchmarking2.png">
-
-		<div class="big-margin">
-			<div class="text section-head-2" id="sevenfivetop">Addressing User Concerns</div>
-			<div class="text section-dis">
-				I used my benchmarking takeaways to map users' concerns from the questionnaire to features Storia could have as solutions. While the last one, "journaling is difficult to organize," wasn't a user concern, it was one of the core problems I was trying to address in the first place.
-			</div>
-		</div>
-
-		<img  id="surrender" src="images/addressing.jpg">
-
-
-		<div class="big-margin">
-
-			<div class="text section-head">Users</div>
-			<div class="text section-head-2" id="sevenfivetop">User Personas</div>
-			<div class="text section-dis">
-				From my research, I came up with 2 user personas with different use cases and habits:
-			</div>
-
-		</div>
-		<img class="fivetop" id="surrender" src="images/users.jpg">
-
-		<div class="big-margin">
-			<div class="text section-dis">
-				<div class="bold-text">Vivian</div> loves photography because it allows her to record the important events and people in her life. She uses journaling as another way to record everything, so she wants to write daily and add photos she's taken.
-
-				<br/><br/>
-				On the other hand, as a freshman, <div class="bold-text">Evan</div> is stressed out from hard classes and the new environment. His advisor suggested he use a journal to vent his feelings whenever he's overwhelmed, but he has trouble putting his feelings to words.
-			</div>
-			<div class="text section-head-2" id="sevenfivetop">User Journeys</div>
-			<div class="text section-dis">
-				I then outlined user journeys that captured how Vivian and Evan would interact with Storia in their day to day lives. These would help me visualize the user flow and what features each screen should include.
-			</div>
-		</div>
-
-		<img  id="surrender" src="images/vivianjourney.jpg">
-		<img  id="surrender" src="images/evanjourney.jpg">
-
-
-
-
-
-
-
-		<div class="big-margin">
-<!-- 			BRAINSTORMING SECTION STARTS HERE -->
-			<div id="ideation" class="text section-head">Ideation</div>
-			<div class="text section-head-2" id="sevenfivetop">Sketching</div>
-			<div class="text section-dis">
-				I played with different layouts quickly by sketching out my ideas and scribbling notes. At this point, I focused on just getting any idea I had out on paper, which is why they're so messy! Here are a few pages out of many:
-			</div>
-		</div>
-
-			<img class="fivetop" id="surrender" src="images/sketches.jpg">
-
-		<div class="big-margin">
-			<div class="text section-head-2" id="sevenfivetop">Mood Board</div>
-			<div class="text section-dis">
-				I made a mood board for style inspiration, centered around purple (which is a relaxing color, according to color theory) and twilight/night.
-			</div>
-
-		</div>
-
-		<img id="surrender" src="images/mood board.jpg">
-
-		<div class="big-margin">
-			<div class="text section-head-2">Style Guide</div>
-		</div>
-		
-		<img id="surrender" src="images/style.jpg">
-
-		<div class="big-margin">
-
-<!-- 		ITERATIONS SECTION STARTS HERE -->
-
-			<div class="text section-head">Iterations</div>
-			<div class="text section-dis">
-				Throughout the design process, I asked some of the users who had filled out the preliminary questionnaire for their opinions on my work in progress and conducted some A/B testing.
-			</div>
-			<div class="text section-head-2">Minimalism vs. Comfort</div>
-			<div class="text section-dis">
-				Early on, <div class="bold-text">I played with a very minimalist design</div> in the spirit of Medium and other distraction-free environments, with a mostly white background and line icons, thinking it would be the best solution for users' concerns about being easily distracted. 
-
-				<br/><br/>After showing it to users, however, I found that while it wasn't distracting, some users said it also made journaling feel less intimate. <div class="bold-text">The white interface was too sterile and empty,</div> and in an ideal world <div class="bold-text">an online diary would feel comforting and friendly</div>--a safe space to express yourself.
-
-				<br/><br/>I added more colors, making the purple accent more prominent, and added more rounded edges. I also made the bookmark button bigger and at the top of the entry, much like where a bookmark would go in a real book. 
-
-			</div>
-		</div>
-
-		<div class="row" id="fivetop">
-			<div class="column-50"><a href="images/minimalist.jpg"><img class="smol-2" src="images/minimalist.jpg"></a></div>
-			<div class="column-50"><a href="images/minimalist.jpg"><img class="smol-2" src="images/comfort.jpg"></a></div>
-		</div>
-		<div class="row">
-			<div class="column-50-italic">Minimalist</div>
-			<div class="column-50-italic">Comforting</div>
-		</div>
-
-		<div class="big-margin">
-			<div class="text section-dis">
-				<br/><br/>With these additions, the main screen wasn't very distraction-free environment, so I also <div class="bold-text">added buttons to collapse the side bar and full screen the writing area!</div>
-
-				
-			</div>
-			<div class="text section-head-2">Other Iterations</div>
-			<div class="text section-dis">
-				My other iterations ranged from ones involving <div class="bold-text">minute visual design changes</div> (like the mini calendar, people cards, and collapse buttons) to the <div class="bold-text">higher level features</div> (places vs tags). Every time I completed a line of iterations for a feature, I would check in with users. Occasionally, I also asked them to complete tasks on the work in progress prototype.
-			</div>
-		</div>
-
-		<img id="surrender" class="fivetop" src="images/calendars-2.jpg">
-
-
-
-
-
-			<div class='big-margin'>
-			<div class="text section-dis">
-				For places vs tags, I originally considered having a "Places" feature to accompany the "People" page, where users could see diary entries organized by places they were written in. When I asked users, though, they said they would generally write their entries in the same place most days. I changed this feature to "Tags" as an alternative organizational system and received much more positive response. 
-			</div>
-
-
-
-		<!-- 			ITERATIONS SECTION ENDS HERE	 -->		
-			<div class="text section-head" id="solution">Prototype</div>
-<!-- 			<div class="text section-dis">
-				After my header iterations, I came up with my final solution using the other League sites as a guideline:
-			</div> -->
-		</div>
-		<iframe width="100%" height="700" src="https://xd.adobe.com/embed/75b23722-b666-49a7-784c-8fa805ff538c-0383/?fullscreen" frameborder="0" allowfullscreen></iframe>
-
-		<div class="big-margin">
-			<div class="text section-head-2">Email</div>
-			<div class="text section-dis">
-				The email is meant to make it easy for users to get their entries in. Users can reply to the email with their entries so they don't have to navigate anywhere else, and the prompt is there to help if they choose to do so. There's also a button in the email so they can easily go to Storia if they want to. 
-
-				<br/><br/>
-				To incentivize users to respond, if they're close to completing an achievement, there will also be a sentence saying so.
-			</div>
-		</div>
-
-			<div class="row" id="more-padding">
-				<div class="column-50">
-					<a href="images/mainscreen.png"><img id="header-redesign" src="images/mainscreen.png" alt="new header"></a>
-
-				</div>
-
-				<div class="column-50 column-50-text">
-					<div>
-						<div class="text section-head-2 column-head">Main Screen</div>
-						<div class="text section-dis column-text">
-							The main screen features three panels: <div class="bold-text">navigation, entries, and writing space.</div>
-
-							<br/><br/>As mentioned before, the navigation is collapsible to reduce distractions, and the writing space can be full-screened. Clicking on dates in the mini calendar will show all entries made on that day throughout the years in the entries panel. 
-
-							<br/><br/>If the user is coming from an email, the writing space is populated with the same prompt. Users can close the prompt, keep it (turning it into plain, editable text), or get a new prompt. To keep this space distraction free, there are only three bubbles for entry editing, but highlighting text or expanding the + will offer more options, like tagging people and formatting.
-
-							<br/><br/>Users can change the date and location manually by clicking on the respective fields, allowing them to make retroactive entries. 
-
-
-						</div>					
-					</div>
-				</div>
-			</div>
-
-			<div class="row" id="sevenfivetop">
-				<div class="column-50">
-					<a href="images/achievements.png"><img id="header-redesign" src="images/achievements.png" alt="game description"></a>
-
-				</div>
-
-				<div class="column-50 column-50-text">
-					<div>
-						<div class="text section-head-2 column-head">Achievements</div>
-						<div class="text section-dis column-text" id="more-top">
-							The achievements are meant to incentivize users to meet their goals and make new habits. Since every user will have their own goals, users can make their own achievements. There will still be some starter achievements already premade though, and suggestions will be given during creation!
-
-							<br/><br/>The completed section is meant to be like a trophy case, with a prominent trophy image that can be set in achievement creation from a variety of premade medal images in bronze, silver, gold, etc., or users can upload their own.
-					</div>
-				</div>
-			</div>
-		</div>
-
-			<div class="big-margin">
-			<div class="text section-head-2" id="more-top">People</div>
-			<div class="text section-dis">
-				When users tag names in their entries, a profile is automatically created in the People tab (but users can manually create one as well). In the profiles, users can add any information they want to remember: how they know each other, how they met, birthdays, a brief description, photos, etc. Once the profile is created, Storia automatically tracks mentions of the name, and users can add nicknames too. Users can also add people to groups like family, organizations, and more.
-			</div>
-		</div>
-
-				<div class="row" id="fivefivetop">
-			<div class="column-50"><a href="images/people.jpg"><img class="smol-2" src="images/people.jpg"></a></div>
-			<div class="column-50"><a href="images/profile.jpg"><img class="smol-2" src="images/profile.jpg"></a></div>
-		</div>
-		<div class="row">
-			<div class="column-50-italic">People Overview</div>
-			<div class="column-50-italic">Individual Profile</div>
-		</div>
-
-		<div class="big-margin">
-			<div class="text section-head">Future Features</div>
-			<div class="text section-dis">
-				In the future, I'd like to add more features, like <div class="bold-text">onboarding, calendar sync, sharing options, and other ways for users to freely express themselves (maybe drawing and voice recordings!)</div>. I'd also like to <div class="bold-text">evaluate creating an achievement rewards system</div>, and most importantly, <div class="bold-text">conduct some final user testing</div> to make sure my design is the best it can be! 
-			</div>
-		</div>
-
-
-			<div class="text section-head-2" id="thanks">Thanks for reading!</div>
-			<!-- 					<div class="links"><a href="https://www.kimhuynh.net/">Home</a></div>  -->
-					<div class="links bold-link"><a href="https://www.kimhuynh.net/storia/">Storia</a></div>
-					<div class="links"><a href="https://www.kimhuynh.net/steam/">Steam Redesign</a></div> 
-					<div class="links"><a href="https://www.kimhuynh.net/sybil/">Sybil Voice Assistant</a></div> 
-					<div class="links"><a href="https://www.kimhuynh.net/iqvia/">UI/UX @ IQVIA Solution Design Studio</a></div>
-					<br/>
-
-					<div class="links"><a href="https://www.kimhuynh.net/foodster/">Foodster</a></div>					
-					<div class="links"><a href="https://www.kimhuynh.net/google/">Student Org Discovery App</a></div>
-					<div class="links"><a href="https://www.kimhuynh.net/powerup/">UI/UX @ AnitaB.org</a></div>
-					<div class="links"><a href="https://www.kimhuynh.net/hackduke/">HackDuke</a></div>
-
-<!-- 					<div id="back"><a href="#top" class="bold-text" id="back">Back to top</a></div> -->
-	</div>
-
-
-
-	</body>
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129139358-1">
+  </script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "UA-129139358-1");
+
+    import AOS from "aos";
+    import "aos/dist/aos.css";
+
+    // init AOS animation
+    window.addEventListener("load", () => {
+      AOS.init({
+        duration: 1000,
+        offset: 100,
+      });
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+      setTimeout(function () { AOS.refresh(); }, 500);
+    });
+
+  </script>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Kim Huynh</title>
+
+  <link rel="stylesheet" href="style copy.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet" />
+
+  <link rel="shortcut icon" type="image/x-icon" href="logo.ico" />
+  <!-- <link rel="icon" href="http://www.kimhuynh.net/favicon.ico?v=2" /> -->
+  <link rel="icon" href="logo.ico" />
+</head>
+
+<body>
+
+  <div id="all-the-top-stuff">
+    <div class="navigation">
+      <div class="nav-button float"><a href="https://www.kimhuynh.net/#work/">Work</a></div>
+      <div class="nav-button float"><a id="non-select" href="http://www.kimhuynh.net/play/">Play</a></div>
+      <div class="nav-button float"><a id="non-select" href="http://www.kimhuynh.net/about-me/">About</a></div>
+      <div class="nav-button float">
+        <a id="non-select" class="last-nav" href="https://goo.gl/7mjuQz" target="_blank">Resume</a>
+      </div>
+    </div>
+
+    <div class="logo">
+      <a href="http://www.kimhuynh.net"><img src="images/logo.svg" alt="Kim Huynh"></a>
+    </div>
+
+    <div class="header">
+      <img class="hero fadein" src="images/storia hero.png">
+          <div class="headline">
+            <div data-aos="fade-down">
+              <div class="wrapper">
+                <img class="row-icon" src="images/storia icon.png">
+              </div>
+              <div id="title">
+                <div>Storia</div>
+              </div>
+            </div>
+          
+            <div data-aos="fade-down" data-aos-delay="500" class="headline-2"> Journaling app concept to inspire <br>
+              busy people to write
+              <br /><br />
+              <div data-aos="fade-down" data-aos-delay="800">
+                <div class="half-row-2" style="padding-top: 40px;">
+          
+                  <div class="column-50">
+                    <div class="subheader-33">Role</div>
+                    <div class="body-33">
+                      Lead designer
+                    </div>
+                  </div>
+                  <div class="column-50">
+                    <div class="subheader-33">Project scope</div>
+                    <div class="body-33">
+                      Personal project, <br>
+                      0→1 concept
+                    </div>
+                  </div>
+                </div>
+          
+                <div class="half-row-2" style="padding-top: 20px;">
+          
+                  <div class="column-50">
+                    <div class="subheader-33">team</div>
+                    <div class="body-33">
+                      Solo
+                    </div>
+                  </div>
+                  <div class="column-50">
+                    <div class="subheader-33">timeline</div>
+                    <div class="body-33">
+                      ~ 1 month
+                    </div>
+                  </div>
+                </div>
+          
+              </div>
+          
+            </div>
+          
+          
+          
+          </div>
+    </div>
+
+
+    <div data-aos="fade" data-aos-delay="300" class="scroll-downs">
+      <div id="scroll" class="mousey">
+        <div class="scroller"></div>
+      </div>
+    </div>
+  </div>
+
+  <div data-aos="fade-down" class="intro-container">
+    <div class="intro-box">
+      <div style="font-family: 'Kollektif-Bold'; white-space: nowrap;"><span
+          style="display:inline-block; vertical-align: middle; margin-right:8px;"><img src="images/warning.png"
+            style="padding-top: 3px;"></span>Warning:</div>
+      <div id="tip-text">This project & case study were designed while I was still in university! Looking for more
+        recent work? Check out <span class="bold"><a href="http://www.kimhuynh.net/marketplace/" id="warning-link">my
+            latest case study.</a></span></div>
+      <a href="https://www.kimhuynh.net/marketplace/" style="margin: auto;"><button class="skip-proto">See Recent Work</button></a>
+    </div>
+  </div>
+
+  <div style="margin: 0 10% 0 10%" id="parent">
+    <div>
+      <nav class="toc sticky">
+        <ul>
+          <li>
+            <a href="#overview">Overview</a>
+          </li>
+          <li>
+            <a href="#inspiration">Inspiration</a>
+          </li>
+          <li>
+            <a href="#problem">Problem</a>
+          </li>
+          <li>
+            <a href="#research">Research</a>
+          </li>
+          <li>
+            <a href="#users">Users</a>
+          </li>
+          <li>
+            <a href="#ideation">Ideation</a>
+          </li>
+          <li>
+            <a href="#iterations">Iterations</a>
+          </li>
+          <li style="line-height: 1.7;">
+            <a href="#prototype">Prototype &<br> <span style="padding-left: 14px;">final designs</span></a>
+          </li>
+          <li>
+            <a href="#next-steps">next steps</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="testing" style="padding-top: 15px;">
+        <div class="contents">
+          <section data-aos="fade-down" id="overview">
+            <h3>👀 OVERVIEW</h3>
+            <h2>
+              Storia is a personal concept I designed <br>
+              to be a desktop app that helps <span class="highlight-text2">busy people <br>
+              chronicle their lives as a story.</span>
+            </h2>
+            <p>
+              This was a project I worked on whenever I had time during my junior year fall semester. Even though it was only a short
+              time, it’s a concept that’s close to home for me, combining my love of journaling & writing with design, and it was my
+              first experience designing an app from 0→1 all on my own!
+            </p>
+            <div>
+              <a href="#prototype"><button class="skip-proto"
+                  style="color:black; border: 2px solid black; margin-top: 25px; margin-bottom: 10px;">Skip to
+                  Prototype</button></a>
+            </div>
+          </section>
+
+          <section data-aos="fade-down" id="inspiration">
+            <h3>💡 INSPIRATION</h3>
+            <h2>
+              The idea for Storia came from my own story: <br>
+              going from journaling every single day to <br>
+              losing touch with it completely.
+            </h2>
+            <p>I used to journal daily! I signed up for a journal service that would email me a reminder every day, and in the evenings
+            I'd take the time to just reflect and write. I really enjoyed having those times of peace and clarity of mind. If I
+            skipped a day, I’d fill it back in within a couple days.
+            <br>
+            <br>
+            When I hit college, <span class="bold highlight-text-p">I was so busy that the reminders just started piling up.</span> Every few months, I'd try to write a
+            "catch-up" entry about everything that happened to me so far—events, new people I'd met—<span class="bold highlight-text-p">but it would be so long and
+            disorganized that I'd end up giving up.</span>
+
+              <!-- <div style="margin: 40px 0; background-color: #F6F6F6; height: 350px; width: 100%"></div> -->
+            <div class="half-row-2" style="flex-direction: column;">
+              <img class="img-33" src="images/inspiration.png">
+
+            </div>
+
+            </p>
+
+          </section>
+
+          <section data-aos="fade-down" id="problem">
+            <h3>🤔 PROBLEM</h3>
+            <h2>
+              Journaling is <span class="highlight-text2">hard to keep up with,</span> <br>
+              & <span class="highlight-text2">it’s challenging to organize everything</span> that’s been happening in your life into writing.
+            </h2>
+            <p>
+              With the hustle and bustle of our everyday lives, it’s so hard to find time to write and reflect on what’s been going
+              on. And the longer you go without writing, the more memories you have to catch up on writing! With how multi-faceted our
+              lives are, we’re just left with a chaotic mess of people, events, and feelings to put in our journals.
+            </p>
+            <!-- <div class="half-row-2" style="flex-direction: column;">
+                              <img class="img-33" style="padding: 60px 0;" src="images/airtable 1.png">
+                            </div> -->
+            <!-- <div class="half-row-2" style="flex-direction: column;">
+                                          <img class="img-33" style="padding: 60px 0;" src="images/airtable 2.png">
+                                        </div> -->
+
+            <!-- <div class="row-mocks" style="flex-direction: column; margin-top: 40px; margin-bottom: 40px;">
+              <img class="img-33" src="images/airtable 2.png">
+
+            </div> -->
+          </section>
+
+
+          <section data-aos="fade-down" id="research">
+            <h3>🔍 RESEARCH</h3>
+            <h2>
+              Was this just a me problem? <br>
+              I needed to do my research: talking to others & <br>
+              seeing the journaling landscape.
+            </h2>
+            <p>To really understand the problem at hand and how to design the best solution, <span class="bold highlight-text-p">I sent out a preliminary user
+            questionnaire and looked at existing solutions.</span>
+            <br>
+            <br>
+            <br>
+            <span class="bold">QUESTIONNAIRE</span><br>
+            In the questionnaire, I asked college students about their journaling habits. I discovered some key statistics,
+            barriers, and habits:
+            <div class="half-row-2">
+              <img class="img-33" src="images/research 1.png">
+            </div>
+                        <div class="half-row-2">
+                          <img class="img-33" src="images/research 2.png">
+                        </div>
+                        <div class="half-row-2">
+                          <img class="img-33" src="images/research 3.png">
+                        </div>
+            </p>
+
+            <p>
+              <span class="bold">BENCHMARKING</span><br>
+              I then looked at existing solutions, their pros and cons, and how they could be applied to Storia. I looked at four
+              different categories of solutions: <span class="bold highlight-text-p">bona fide journaling apps, writing apps, habit-forming apps, and story
+              planning/organizing apps.</span> I wanted to learn more about how they solved their users' problems.
+              <!-- <div class="half-row-2">
+                                                              <img class="img-33" style="padding: 60px 0;" src="images/user research.png">
+                                                            
+                                                            </div> -->
+            <div class="half-row-2">
+              <img class="img-33" style="padding: 15px 0;" src="images/research 4.png">
+            </div>
+            </p>
+            <p>
+              Afterwards, I came up with lists of features that I thought were most successful and effective for each category of
+              apps.
+            
+            <div class="half-row-2">
+              <img class="img-33" style="padding: 15px 0;" src="images/research 5.png">
+            </div>
+            </p>
+            <p>
+              <span class="bold">ADDRESSING USER CONCERNS</span><br>
+              I used my benchmarking takeaways to map users' concerns from the questionnaire to features Storia could have as
+              solutions. While the last one, "journaling is difficult to organize," wasn't a user concern, it was one of the core
+              problems I was trying to address in the first place.
+            </p>
+            <div class="half-row-2">
+              <img class="img-33" style="padding: 15px 0;" src="images/research 6.png">
+            </div>
+          </section>
+
+          <section data-aos="fade-down" id="users">
+            <!-- <hr style="margin-bottom: 70px; height:0.5px;"> -->
+            <h3>😊😄 USERS</h3>
+            <h2>
+              Meet college students Vivian & Evan: <br>
+              the 2 user personas made from my research.
+            </h2>
+            <p>
+            The two have distinct use cases and habits:
+                        </p>
+                        <div class="half-row-2">
+              <img class="img-33" style="padding: 0 0;" src="images/users.png">
+            </div>
+
+
+            <p>
+              <span class="bold">Vivian</span> loves photography because it allows her to record the important events and people in her life. She uses
+              journaling as another way to record everything, so she wants to write daily and add photos she's taken.
+              <br>
+              <br>
+              On the other hand, as a freshman, <span class="bold">Evan</span> is stressed out from the new college environment. His advisor suggested he use a
+              journal to vent his feelings whenever he's overwhelmed, but he has trouble putting his feelings to words.
+              <br>
+              <br>
+              <br>
+              <br>
+              <span class="bold">USER JOURNEYS</span><br>
+              I then outlined user journeys that captured how Vivian and Evan would interact with Storia in their day to day lives.
+              These would help me visualize the user flow and what features each screen should include.
+            </p>
+<div class="half-row-2">
+  <img class="img-33" style="padding: 0 0;" src="images/users 2.png">
+</div>
+
+            <!-- <div class="row-mocks" style="flex-direction: column; margin-top: 40px; margin-bottom: 20px;">
+              <img class="img-33" style="padding: 0 0;" src="images/iterations 2b.png">
+              <div class="title-mocks">
+                Iterations: Filled State
+              </div>
+              <div class="subtitle-mocks">
+                Once the inputs of the viz are dropped in, it's a matter of storing them in an accessible way that lets
+                users easily modify them.
+                A few explorations included having a permanent section at the top of the builder <span
+                  class="bold">(1),</span> showing them on hover <span class="bold">(2),</span>
+                or storing them in a new right rail <span class="bold">(3).</span>
+              </div>
+
+            </div> -->
+            <p>
+              Given the little time I had to work on Storia, <span class="bold highlight-text-p">I focused on Vivian’s journey first,</span> translating it to a more generalized
+              user flow.
+            </p>
+            <div class="half-row-2">
+              <img class="img-33" style="padding: 0 0;" src="images/users 3.png">
+            </div>
+
+          </section>
+
+
+
+
+          <section data-aos="fade-down" id="ideation">
+            <!-- <hr style="margin-bottom: 70px; height:0.5px;"> -->
+            <h3>💭 IDEATION</h3>
+            <h2>
+              To kickstart the design work, <br>
+              I started with some rough sketches, a mood board, & a basic style guide.
+            </h2>
+            <p>
+              <span class="bold">SKETCHING</span><br>
+              I played with different layouts quickly by sketching out my ideas and scribbling notes. At this point, I focused on just
+              getting any idea I had out on paper, which is why they're so messy! Here are a few pages out of many:
+            </p>
+            <div class="half-row-2">
+              <img class="img-33" style="padding: 0 0;" src="images/sketching.png">
+            </div>
+            <!-- <div class="half-row-2">
+            <img class="img-33" style="padding: 0 0;" src="images/usability testing.png">
+        
+          </div> -->
+
+
+
+            <p>
+              <span class="bold">MOOD BOARD</span><br>
+              I made a mood board for style inspiration, centered around purple (which is a relaxing color, according to color theory)
+              and twilight/night.
+            </p>
+            <div class="half-row-2">
+              <img class="img-33" style="padding: 0 0;" src="images/mood board.png">
+            </div>
+
+            <p>
+              <span class="bold">STYLE GUIDE</span><br>
+              Based on the mood board, I came up with a rough preliminary style guide to use as a starting point for my designs.
+            </p>
+            <div class="half-row-2">
+              <img class="img-33" style="padding: 0 0;" src="images/style guide.png">
+            </div>
+          </section>
+
+                  <section data-aos="fade-down" id="iterations">
+                    <!-- <hr style="margin-bottom: 70px; height:0.5px;"> -->
+                    <h3>✏️ ITERATIONS</h3>
+                    <h2>
+                      Throughout the design process, <br>
+                      I continued testing design variants with target users to help refine the UX & the visual
+                      direction.
+                    </h2>
+                    <p>
+                      I asked some of the users who had filled out the preliminary questionnaire for their opinions on my work in progress and
+                      conducted some A/B testing.
+                      <br>
+                      <br>
+                      <br>
+                      <span class="bold">MINIMALISM VS. COMFORT</span><br>
+                      Early on, <span class="bold highlight-text-p">I played with a very minimalist design</span> in the spirit of Medium and other distraction-free environments, with a
+                      mostly white background and line icons, thinking it would be the best solution for users' concerns about being easily
+                      distracted.
+                      </p>
+                    <div class="half-row-2">
+                      <img class="img-33" style="padding: 0 0;" src="images/minimalist b.png">
+                    </div>
+                      <p>
+                      After showing it to users, however, I found that while it wasn't distracting, some users said it also made journaling
+                      feel less intimate. <span class="bold highlight-text-p">The white interface was too sterile and empty,</span> and in an ideal world <span class="bold highlight-text-p">an online diary should feel
+                      comforting and friendly</span>—a safe space to express yourself.
+                      <br>
+                      <br>
+                      I added more colors, making the purple accent more prominent, and added more rounded edges. I also made the bookmark
+                      button bigger and at the top of the entry, much like where a bookmark would go in a real book.
+                    </p>
+                    <div class="half-row-2">
+                      <img class="img-33" style="padding: 0 0;" src="images/minimalist c.png">
+                    </div>
+                    <!-- <div class="half-row-2">
+                              <img class="img-33" style="padding: 0 0;" src="images/usability testing.png">
+                          
+                            </div> -->
+                  
+                  
+                  
+                    <p>
+                      With these additions, the main screen wasn't very distraction-free environment, so I also added <span class="bold highlight-text-p">buttons to collapse the
+                      side bar and a full screen the writing area!</span>
+                      <br>
+                      <br>
+                      <br>
+                      <span class="bold">OTHER ITERATIONS</span><br>
+                      My other iterations were largely minute visual design changes (like the mini calendar, people cards, and collapse
+                      buttons) and one decision between including different features (places vs tags). Every time I completed a line of
+                      iterations for a feature, I would check in with users. Occasionally, I also asked them to complete tasks on the work in
+                      progress prototype.
+                    </p>
+                    <div class="half-row-2">
+                      <img class="img-33" style="padding: 0 0;" src="images/iterations.png">
+                    </div>
+                  
+                    <p>
+                      For places vs tags, I originally considered having a "Places" feature to accompany the "People" page, where users could
+                      see diary entries organized by places they were written in. When I asked users, though, they said they would generally
+                      write their entries in the same place most days. <span class="bold highlight-text-p">I changed this feature to "Tags" as an alternative organizational
+                      system and received much more positive response.</span>
+                    </p>
+                  </section>
+
+          <section data-aos="fade-down" id="prototype">
+            <!-- <hr style="margin-bottom: 70px; height:0.5px;"> -->
+            <h3>🖥️ PROTOTYPE & FINAL DESIGNS</h3>
+            <h2>
+              Take a look at the prototype,<br>
+              featuring the final designs I made:
+            </h2>
+            <p>
+              (ft. static mocks below the prototype gif)
+            </p>
+            <!-- <div class="half-row-2">
+                                <img class="img-33" style="padding: 0 0;" src="images/usability testing.png">
+                            
+                              </div> -->
+            <div data-aos="fade-down" class="row-mocks" style="flex-direction: column; margin-top: 80px; margin-bottom: 90px;">
+            <div>
+              <img class="img-33 prototype-mask" style="padding: 0 0; cursor: pointer;" src="images/storia prototype.gif"></div>
+
+                                        <div class="lightbox">
+                                          <!-- <span style="background-image: url('images/storia prototype high res.gif')"></span> -->
+                                          <img src="images/storia prototype high res.gif" loading="lazy">
+                                        </div>
+            <div class="title-mocks">
+              Prototype
+            
+              <div class="subtitle-mocks">
+                <span style="font-family: Kollektif-Italic;">(click for high-res)</span>
+              </div>
+            </div>
+
+            </div>
+
+            
+
+                        <div data-aos="fade-down" class="row-mocks" style="flex-direction: column; margin-top: 80px; margin-bottom: 90px;">
+                            <img id="email" class="img-33" style="padding: 0 0;" src="images/email mock.png">
+
+                          <div class="title-mocks">
+                            Email
+                          </div>
+                          <div class="subtitle-mocks">
+                            The email makes it quick & easy for users to get their entries in. Users can reply to the email with their entries
+                            directly, and the prompt is there to help if they need it. The email also tells users if they're close to completing an
+                            achievement to incentivize them!
+                          </div>
+                        </div>
+
+
+                        <div data-aos="fade-down" class="row-mocks" style="flex-direction: column; margin-top: 80px; margin-bottom: 90px;">
+                          <img class="img-33" style="padding: 0 0;" src="images/main mock.png">
+                          <div class="title-mocks">
+                            Main Screen
+                          </div>
+                          <div class="subtitle-mocks">
+                            The main screen features three panels: <span class="bold">navigation, entries,</span> and <span class="bold">writing space.</span>
+                            <br>
+                            <br>
+                            The collapsible RHC and full screen button keep the writing space distraction-free. Clicking on dates in the mini
+                            calendar shows all entries made on that day throughout the years.
+                                                        <br>
+                                                        <br>
+                            If the user is coming from an email, the writing space shows the same prompt. Users can close the prompt, keep it
+                            (turning it into plain, editable text), or get a new prompt.
+                          </div>
+                        </div>
+
+                        <div data-aos="fade-down" class="row-mocks" style="flex-direction: column; margin-top: 80px; margin-bottom: 90px;">
+                          <img class="img-33" style="padding: 0 0;" src="images/achievements mock.png">
+                          <div class="title-mocks">
+                            Achievements
+                          </div>
+                          <div class="subtitle-mocks">
+                            The achievements are meant to <span class="bold">users to meet their goals and make new habits.</span> Since every user will have
+                            their own individual goals, users can make their own achievements outside of the premade ones.
+                            <br>
+                            <br>
+                            The completed section is like a trophy case, with a prominent image selected in achievement creation from a variety of
+                            premade medal images in bronze, silver, gold, etc., or users can upload their own.
+                          </div>
+                        </div>
+
+                                                <div data-aos="fade-down" class="row-mocks" style="flex-direction: column; margin-top: 80px; margin-bottom: 90px;">
+                                                  <img class="img-33" style="padding: 0 0 40px 0;" src="images/people 1.png">
+                                                  <img class="img-33" style="padding: 0 0;" src="images/people 2.png">
+                                                  <div class="title-mocks">
+                                                  People
+                                                  </div>
+                                                  <div class="subtitle-mocks">
+                                                    When users tag names in their entries, a profile is automatically created in the People tab (but users can manually
+                                                    create one too). Here, users can add any info they want to remember: how they know each other, how they met, nicknames,
+                                                    birthdays, a brief description, photos, etc.
+                                                    <br>
+                                                    <br>
+                                                    Once the profile is created, Storia automatically tracks mentions of the name and associated nicknames. Users can also
+                                                    add people to groups like family, organizations, and more.
+                                                  </div>
+                                                </div>
+
+          </section>
+
+          <section data-aos="fade-down" id="next-steps">
+            <h3>👋️ NEXT STEPS</h3>
+            <h2>
+              While it was a short first project,<br>
+              I’d love to return to it some day!
+            </h2>
+            <p>
+              I’d love to add more features, like onboarding, dark mode, calendar sync, sharing options, other ways for users to
+              freely express themselves (maybe drawing and voice recordings!), and some sort of rewards system, with further usability
+              testing too!
+          </section>
+
+        </div>
+      </div>
+    </div>
+
+    <div id="parent">
+      <div class="closing" data-aos="fade-down">
+        <hr>
+        <div>
+          <div style="padding-top:30px; letter-spacing: 0.48px; width: fit-content;">
+
+            Thanks for reading! <span><img src="images/hi.png" id="hi-sparkle"></span></div>
+          <div id="lookingfor">
+            Looking for more?
+          </div>
+
+          <div class="half-row-3">
+            <div class="column-33" data-aos="fade-down">
+              <div style="position: relative;">
+                <img class="flourishes" id="right-sparkle" src="images/right sparkle.png">
+                <img class="flourishes" style="bottom:-13px; right: -35px; width: 85px;" src="images/fb flourish.png">
+                <a href="http://www.kimhuynh.net/marketplace/">
+
+                  <img class="img-33" style="padding: 0 0;" src="images/new marketplace mocks.png">
+                </a>
+              </div>
+              <div style="padding: 0 20px;">
+                <a href="http://www.kimhuynh.net/marketplace/" class="header-33-2 float-4">Facebook
+                  <div style="display:inline-block; vertical-align: middle;" class="new-arrow"><img
+                      style="margin-left: 2px; padding-bottom: 4px;" src="images/new arrow.svg"></div>
+                </a>
+                <div class="body-33-2">As a designer on Marketplace, I helped sellers succeed with promotions and
+                  incentives</div>
+              </div>
+            </div>
+
+            <div class="column-33" data-aos="fade-down" data-aos-delay="200">
+              <div style="position: relative;">
+                <img class="flourishes" id="left-sparkle" src="images/left sparkle.png">
+                <img class="flourishes" style="bottom:-18px; right: -30px; width: 72px;" src="images/adobe flourish.png">
+                <a href="http://www.kimhuynh.net/adobe/">
+            
+                  <img class="img-33" style="padding: 0 0;" src="images/new adobe mocks.png">
+                </a>
+              </div>
+            
+              <div style="padding: 0 20px;">
+                <a href="http://www.kimhuynh.net/adobe/" class="header-33-2 float-4">Adobe
+                  <div style="display:inline-block; vertical-align: middle;" class="new-arrow"><img
+                      style="margin-left: 2px; padding-bottom: 4px;" src="images/new arrow.svg"></div>
+                </a>
+                <div class="body-33-2">I interned on the Analytics team, redesigning and streamlining the way users build data viz
+                </div>
+              </div>
+            </div>
+
+
+            <div class="column-33" data-aos="fade-down" style="margin-right: 0;" data-aos-delay="400">
+              <div style="position: relative;">
+                <img class="flourishes" id="right-sparkle" src="images/right sparkle.png">
+                <img class="flourishes" style="bottom:-5px; right: -38px; width: 90px;"
+                  src="images/empactful flourish.png">
+                <a href="http://www.kimhuynh.net/empactful/">
+
+                  <img class="img-33" style="padding: 0 0;" src="images/new empactful mocks.png">
+                </a>
+              </div>
+              <div style="padding: 0 20px;">
+                <a href="http://www.kimhuynh.net/empactful/" class="header-33-2 float-4">Empactful
+                  <div style="display:inline-block; vertical-align: middle;" class="new-arrow"><img
+                      style="margin-left: 2px; padding-bottom: 4px;" src="images/new arrow.svg"></div>
+                </a>
+                <div class="body-33-2">In uni, I designed for a student-made fintech startup focused on investing in
+                  social good
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+    <div><button class="float-3 scroll-top"><img src="images/top.svg"></button></div>
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      AOS.init({
+        // Global settings:
+        disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+        startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+        initClassName: 'aos-init', // class applied after initialization
+        animatedClassName: 'aos-animate', // class applied on animation
+        useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+        disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+        debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+        throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        offset: 80, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 1250, // values from 0 to 3000, with step 50ms
+        easing: 'ease', // default easing for AOS animations
+        once: false, // whether animation should happen only once - while scrolling down
+        mirror: false, // whether elements should animate out while scrolling past them
+        anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+      });
+      var myVar;
+
+      function myFunction() {
+        myVar = setTimeout(showPage, 3000);
+      }
+
+      function showPage() {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("myDiv").style.display = "block";
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        setTimeout(function () { AOS.refresh(); }, 500);
+      });
+
+
+
+
+      var scrollToTopBtn = document.querySelector(".scroll-top");
+      // var tableofcontents = document.querySelector(".toc");
+      var rootElement = document.documentElement;
+
+      function handleScroll() {
+        // Do something on scroll
+        var scrollTotal = rootElement.scrollHeight - rootElement.clientHeight;
+        if (rootElement.scrollTop / scrollTotal > 0.05) {
+          // Show button
+          scrollToTopBtn.classList.add("showBtn");
+          // tableofcontents.classList.add("showBtn");
+        } else {
+          // Hide button
+          scrollToTopBtn.classList.remove("showBtn");
+          // tableofcontents.classList.remove("showBtn");
+        }
+      }
+
+      function scrollToTop() {
+        // Scroll to top logic
+        rootElement.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+      }
+      scrollToTopBtn.addEventListener("click", scrollToTop);
+      document.addEventListener("scroll", handleScroll);
+
+
+      var lightbox = document.querySelector(".lightbox");
+      var prototype = document.querySelector(".prototype-mask");
+
+
+        // When the user clicks on the button, open the modal
+          prototype.onclick = function () {
+            lightbox.style.display = "flex";
+          }
+
+          // When the user clicks on <span> (x), close the modal
+          lightbox.onclick = function () {
+            lightbox.style.display = "none";
+          }
+
+
+
+      //   let options = {
+      //     // rootMargin: '5px 10px', // works just like margin on element
+      //     threshold: 0.3 // when ~90% of element is visible, trigger IO
+      //   }
+
+      //   let observer = new IntersectionObserver(callback, options); // trigger callback function when provided options match for an element
+      //   let targets = document.querySelectorAll('.highlight-text-p'); // you want to watch multiple elements with inactive class
+      //     targets.forEach(target => { // loop through your elements
+      //       observer.observe(target); // observe them
+      //     });
+
+      // // the callback we setup for the observer will be executed now for the first time
+      // // it waits until we assign a target to our observer (even if the target is currently not visible)
+
+      //   let callback = (entries, observer) => {
+      //     entries.forEach(entry => {
+      //       // Each entry describes an intersection change for one observed
+      //       // target element:
+      //       //   entry.boundingClientRect...
+      //       // Your .inactive element is in viewport.
+      //        if (entry.isIntersecting) {
+      //           // Show button
+      //           entry.boundingClientRect.classList.add("highlight-text-p-animate");
+      //         }
+      //     });
+      //   };
+
+
+
+
+
+      //     // We select the element we want to target
+      // var target = document.querySelector(".scroll-top-container");
+
+      // var scrollToTopBtn = document.querySelector(".scroll-top");
+      // var rootElement = document.documentElement;
+
+      // // Next we want to create a function that will be called when that element is intersected
+      // function callback(entries, observer) {
+      //   // The callback will return an array of entries, even if you are only observing a single item
+      //   entries.forEach((entry) => {
+      //     if (entry.isIntersecting) {
+      //       // Show button
+      //       scrollToTopBtn.classList.add("showBtn");
+      //     } else {
+      //       // Hide button
+      //       scrollToTopBtn.classList.remove("showBtn");
+      //     }
+      //   });
+      // }
+
+      // function scrollToTop() {
+      //   rootElement.scrollTo({
+      //     top: 0,
+      //     behavior: "smooth"
+      //   });
+      // }
+      // scrollToTopBtn.addEventListener("click", scrollToTop);
+
+      // // Next we instantiate the observer with the function we created above. This takes an optional configuration
+      // // object that we will use in the other examples.
+      // let observer = new IntersectionObserver(callback);
+      // // Finally start observing the target element
+      // observer.observe(target);
+
+
+
+
+
+      // array of the links in the toc (table of content) block
+      var toc;
+      // array of content (links are refers to the content)
+      var content = [];
+
+      // call prepare function for while page is loaded complete
+      document.addEventListener('DOMContentLoaded', function () {
+        prepare();
+        sync();
+      }, false);
+
+      /**
+       * this function get all toc (table of content) links and content 
+       * and save theme
+       */
+      function prepare() {
+        // get all toc (table of content) links
+        toc = document.querySelectorAll('.toc a');
+        let targets = document.querySelectorAll('.highlight-text-p');
+        // get content so that link refer to it
+        toc.forEach(function (link) {
+          var id = link.getAttribute("href");
+          var element = document.querySelector(id);
+          content.push(element);
+        });
+        // sync toc (table of content) whit part of content that is 
+        // visible into viewport while user scroll
+        window.addEventListener("scroll", sync, false);
+      }
+
+
+      /**
+       * this function check if element is visible in viewport 
+       * 
+       * @argument {String} element which we need to check it 
+       * @returns true if element is visible in viewport else return false 
+       */
+      function isElementInViewport(element) {
+        // get element position
+        var rect = element.getBoundingClientRect();
+
+        // return true if a partial of the element is visible
+        return (rect.bottom >= 0 &&
+          rect.top <= (window.innerHeight || document.documentElement.clientHeight));
+
+        // for while we need check if all off the element is visible in viewport
+        // return (rect.top >= 0 &&
+        //     rect.bottom <= (window.innerHeight || document.documentElement.clientHeight));
+      }
+
+      /**
+       * this function highlight toc (table of content) links which is visible in viewport
+       */
+      function sync() {
+        // check all content 
+        for (var i = 0; i < content.length; i++) {
+          // if content is visible if viewport highlight it 
+          // else remove highlight from it
+          if (isElementInViewport(content[i])) {
+            // toc[i].classList.add('highlight');
+            toc[i].setAttribute("id", "highlight");
+          } else {
+            // toc[i].classList.remove('highlight');
+            toc[i].removeAttribute("id", "highlight");
+          }
+        }
+      }
+
+      var child1 = document.querySelector(".placeholder");
+      var child2 = document.querySelector(".contents");
+      var parent = document.getElementById("parent");
+      var test = document.querySelector(".testing");
+      var nav = document.querySelector(".toc");
+
+      // var childHeight = parseInt(window.getComputedStyle(child2).height) + "px";
+      var navWidth = (parseInt(window.getComputedStyle(nav).width) + 40) + "px";
+      var navHeight = parseInt(window.getComputedStyle(nav).height);
+      // child1.style.paddingTop = childHeight;
+      test.style.paddingLeft = navWidth;
+      test.style.paddingRight = navWidth;
+      test.style.marginTop = (0 - navHeight) + "px";
+
+
+
+
+      //       let options = {
+      //   rootMargin: 0, // works just like margin on element
+      //   threshold: 0.5 // when ~90% of element is visible, trigger IO
+      // }
+
+
+
+      // the callback we setup for the observer will be executed now for the first time
+      // it waits until we assign a target to our observer (even if the target is currently not visible)
+
+
+      // let callback = (entries, observer) => {
+      //   entries.forEach(entry => {
+      //     // Each entry describes an intersection change for one observed
+      //     // target element:
+      //     //   entry.boundingClientRect...
+      //     // Your .inactive element is in viewport.
+      //      if (entry.isIntersecting) {
+      //         // Show button
+      //         entry.classList.add("highlight-text-p-animate");
+      //       }
+      //   });
+      // };
+
+      //       let observer = new IntersectionObserver(callback); // trigger callback function when provided options match for an element
+
+      //           let targets = document.querySelectorAll('.highlight-text-p'); // you want to watch multiple elements with inactive class
+      //           targets.forEach(target => { // loop through your elements
+      //             observer.observe(target); // observe them
+      //           });
+
+      const inViewport = (entries, observer) => {
+        entries.forEach(entry => {
+          entry.target.classList.toggle("highlight-text2-animate", entry.isIntersecting);
+        });
+      };
+
+      const inViewport2 = (entries, observer) => {
+        entries.forEach(entry => {
+          entry.target.classList.toggle("highlight-text-p-animate", entry.isIntersecting);
+        });
+      };
+
+      const Obs = new IntersectionObserver(inViewport);
+      const Obs2 = new IntersectionObserver(inViewport2);
+      const obsOptions = {}; //See: https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API#Intersection_observer_options
+
+      // Attach observer to every [data-inviewport] element:
+      document.querySelectorAll('.highlight-text2').forEach(el => {
+        Obs.observe(el, obsOptions);
+      });
+
+      document.querySelectorAll('.highlight-text-p').forEach(el => {
+        Obs2.observe(el, obsOptions);
+      });
+
+    </script>
+</body>
 
 </html>
-
